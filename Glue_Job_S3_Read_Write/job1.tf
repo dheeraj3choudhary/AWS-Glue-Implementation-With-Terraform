@@ -24,7 +24,3 @@ resource "aws_glue_job" "glue_job" {
     "--enable-metrics"                   = "true"
   }
 }
-
-output "glue_crawler_name" {
-  value = "s3//${aws_s3_bucket.dc-source-data-bucket.id}/"
-}
